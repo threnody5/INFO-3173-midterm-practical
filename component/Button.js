@@ -23,18 +23,13 @@ const styles = StyleSheet.create({
     buttonText: {
         textAlign: 'center',
         color: '#e5e5e5',
-        fontSize: 20
+        fontSize: 20,
+        textTransform: 'uppercase'
     },
     button: {
-        backgroundColor: '#1f74c1',
+        backgroundColor: '#0a3b67',
         paddingTop: 20,
         paddingBottom:20,
         borderRadius: 4,
-        borderColor: '#0a3b67',
-        borderStyle: 'solid',
-        borderTopWidth: 2,
-        borderLeftWidth: 2,
-        borderBottomWidth: 2,
-        borderRightWidth: 2
     }
 })
