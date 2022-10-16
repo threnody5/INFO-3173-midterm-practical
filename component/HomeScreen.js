@@ -12,7 +12,7 @@ export default function HomeScreen({ navigation }) {
             <View style={ styles.container }>
                 <Text style={ styles.homeScreenText }>{ homeScreenMessage }</Text>
             </View>
-            <Button title='Send Email' onPress={ () => { navigation.navigate('Email') } } />
+            <Button title='Go to email' onPress={ () => { navigation.navigate('Email') } } />
         </View>
     )
 }
