@@ -28,7 +28,7 @@ DefaultTheme.colors = {
         <Stack.Screen
         name='Email'
         component={ EmailScreen }
-        options={ { title: 'Email', headerTitleAlign: 'center' } }
+        options={ { title: 'Send Email', headerTitleAlign: 'center' } }
         />
       </Stack.Navigator>
     </NavigationContainer>
