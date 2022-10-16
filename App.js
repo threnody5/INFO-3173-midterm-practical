@@ -2,14 +2,10 @@ import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './component/HomeScreen';
 import EmailScreen from './component/EmailScreen';
-import { useColorScheme } from 'react-native';
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-const scheme = useColorScheme();
-
-console.log(scheme);
 
 DefaultTheme.colors = {
   background: '#e5e5e5',
