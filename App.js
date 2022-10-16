@@ -1,20 +1,37 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from './component/HomeScreen';
+import EmailScreen from './component/EmailScreen';
+import { useColorScheme } from 'react-native';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+const scheme = useColorScheme();
+
+console.log(scheme);
+
+DarkTheme.colors = {
+  primary: '#67af97',
+  background: '#10002d',
+  text: '#67af97',
+  card: '#10002d',
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  return (
+    <NavigationContainer theme={ scheme === 'dark' ? DarkTheme : DefaultTheme }>
+      <Stack.Navigator>
+        <Stack.Screen 
+        name='Home' 
+        component={ HomeScreen } 
+        options={ { title: 'Home', HeaderTitleAlign: 'center', backgroundColor: 'black' } }
+        />
+        <Stack.Screen
+        name='Email'
+        component={ EmailScreen }
+        options={ { title: 'Email', HeaderTitleAlign: 'center' } }
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
