@@ -19,7 +19,7 @@ export default function HomeScreen({ navigation }) {
 
 const styles = StyleSheet.create({
     container: {
-        paddingTop: 150,
+        paddingTop: 125,
         paddingBottom: 30,
         alignItems: 'center',
     },
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         textAlign: 'center',
         textTransform: 'uppercase',
-        color: '#67af97'
+        color: '#0a3b67'
     },
     form: {
         flex: 1,

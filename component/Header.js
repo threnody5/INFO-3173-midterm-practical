@@ -22,6 +22,6 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontWeight: 'bold',
         textTransform: 'uppercase',
-        color: '#67af97'
+        color: '#0a3b67'
     }
 })

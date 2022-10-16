@@ -1,4 +1,4 @@
-import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native';
+import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './component/HomeScreen';
 import EmailScreen from './component/EmailScreen';
@@ -11,25 +11,24 @@ const scheme = useColorScheme();
 
 console.log(scheme);
 
-DarkTheme.colors = {
-  primary: '#67af97',
-  background: '#10002d',
-  text: '#67af97',
-  card: '#10002d',
+DefaultTheme.colors = {
+  background: '#e5e5e5',
+  card: '#e5e5e5',
+  text: '#0a3b67'
 }
 
   return (
-    <NavigationContainer theme={ scheme === 'dark' ? DarkTheme : DefaultTheme }>
+    <NavigationContainer theme={ DefaultTheme }>
       <Stack.Navigator>
         <Stack.Screen 
         name='Home' 
         component={ HomeScreen } 
-        options={ { title: 'Home', HeaderTitleAlign: 'center', backgroundColor: 'black' } }
+        options={ { title: 'Home', headerTitleAlign: 'center' } }
         />
         <Stack.Screen
         name='Email'
         component={ EmailScreen }
-        options={ { title: 'Email', HeaderTitleAlign: 'center' } }
+        options={ { title: 'Email', headerTitleAlign: 'center' } }
         />
       </Stack.Navigator>
     </NavigationContainer>

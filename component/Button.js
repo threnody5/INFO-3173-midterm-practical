@@ -18,19 +18,23 @@ const styles = StyleSheet.create({
         paddingVertical: 40,
         flexDirection: 'column',
         justifyContent: 'center',
-        width: '100%',
+        width: '100%'
     },
     buttonText: {
         textAlign: 'center',
-        color: '#313131',
-        fontSize: 18,
-
+        color: '#e5e5e5',
+        fontSize: 20
     },
     button: {
-        backgroundColor: '#b5b5b5',
+        backgroundColor: '#1f74c1',
         paddingTop: 20,
         paddingBottom:20,
-        borderRadius: 4
-
+        borderRadius: 10,
+        borderColor: '#0a3b67',
+        borderStyle: 'solid',
+        borderTopWidth: 2,
+        borderLeftWidth: 2,
+        borderBottomWidth: 2,
+        borderRightWidth: 2
     }
 })
