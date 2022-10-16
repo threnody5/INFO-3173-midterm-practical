@@ -16,13 +16,12 @@ const styles = StyleSheet.create({
     container: {
         paddingTop: 30,
         paddingBottom: 30,
-        backgroundColor: '#313131'
     },
     headerText: {
         fontSize: 24,
         textAlign: 'center',
         fontWeight: 'bold',
         textTransform: 'uppercase',
-        color: '#b5b5b5'
+        color: '#67af97'
     }
 })
