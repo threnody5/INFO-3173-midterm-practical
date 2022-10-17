@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput } from 'react-native';
+import { View, Text, TextInput, Alert } from 'react-native';
 import * as MailComposer from 'expo-mail-composer';
 import Button from '../../component/Button';
 import { EmailScreenCSS } from './EmailScreenCSS';
@@ -27,6 +27,7 @@ export default function EmailScreen() {
           subject: 'My Subject Line',
           body: message
         };
+        Alert.alert('SUCCESS', 'Your email has been successfully sent!');
         MailComposer.composeAsync(options)
         .then((result) => { 
             console.log(result.status); 
