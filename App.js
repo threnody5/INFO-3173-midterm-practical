@@ -1,7 +1,7 @@
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from './component/HomeScreen';
-import EmailScreen from './component/EmailScreen';
+import HomeScreen from './screens/homeScreen/HomeScreen';
+import EmailScreen from './screens/emailScreen/EmailScreen';
 
 const Stack = createNativeStackNavigator();
 
