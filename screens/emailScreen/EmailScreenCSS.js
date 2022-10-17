@@ -23,7 +23,9 @@ export const EmailScreenCSS = StyleSheet.create({
         borderLeftWidth: 2,
         borderBottomWidth: 2,
         borderRightWidth: 2,
-        marginBottom: 20
+        marginBottom: 20,
+        paddingTop: 10,
+        textAlignVertical: 'top'
     },
     textEmail: {
         fontWeight: 'bold',
